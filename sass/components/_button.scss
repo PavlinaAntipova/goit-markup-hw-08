@@ -1,0 +1,13 @@
+.button {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $accent-color;
+  color: $second-accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88em;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

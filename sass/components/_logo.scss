@@ -1,0 +1,20 @@
+.logo {
+  color: #000000;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+
+  &__text {
+    color: $accent-color;
+  }
+}
+
+.logo--indented {
+  margin-right: 93px;
+}
+
+.logo--lighten {
+  color: $second-accent-color;
+}
