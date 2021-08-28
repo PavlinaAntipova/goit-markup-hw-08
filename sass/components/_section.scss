@@ -1,13 +1,24 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17em;
   text-align: center;
   color: $title-color;
+
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }

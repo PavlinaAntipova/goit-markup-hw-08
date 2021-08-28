@@ -1,30 +1,50 @@
 .section--no-padding {
-  padding-top: 0;
+  display: none;
+
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 0;
+  }
 }
 
 .works {
-  display: flex;
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    display: flex;
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .works__thumb {
-  position: relative;
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    position: relative;
+  }
 }
 
 .works__box {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background-color: rgba(47, 48, 58, 0.8);
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
 
 .works__description {
-  @extend %title;
-  color: $second-accent-color;
-  text-align: center;
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    color: $second-accent-color;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.14em;
+    text-transform: uppercase;
+  }
 }

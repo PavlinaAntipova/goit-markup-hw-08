@@ -6,13 +6,28 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__address-box,
 .footer__social-box {
-  margin-right: 70px;
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.footer__address-box {
+  // Mobile & Tablet
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 // Address
@@ -22,9 +37,18 @@
   color: $second-accent-color;
   font-style: normal;
   line-height: 1.71em;
+  text-align: center;
 
   &__item:not(:first-child) {
-    margin-top: 9px;
+    margin-top: 8px;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    &__item:not(:first-child) {
+      margin-top: 9px;
+      text-align: start;
+    }
   }
 }
 
@@ -40,6 +64,11 @@
 }
 
 // Social-link list
+
+.footer__social-box {
+  margin-top: 60px;
+  text-align: center;
+}
 .social-box__title {
   @extend %title;
   color: $second-accent-color;
@@ -48,10 +77,16 @@
 
 // Form
 .footer-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 570px;
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 570px;
+  }
 }
 
 .footer-form-field__title {
@@ -62,8 +97,8 @@
 }
 
 .footer-form-field__input {
-  height: 50px;
-  width: 358px;
+  display: block;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
@@ -80,13 +115,32 @@
     line-height: 1.25em;
     color: rgba(255, 255, 255, 0.6);
   }
+
+  // Tablet
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 450px;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer-form-field__button {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
+  margin-top: 20px;
+  // Desktop
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .button {
