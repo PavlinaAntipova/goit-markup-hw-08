@@ -12,12 +12,12 @@
 .projects__item {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
-
+  // Tablet
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
-
+  // Desktop
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 30px);
   }
