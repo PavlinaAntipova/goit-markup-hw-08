@@ -28,12 +28,13 @@
   // Desktop
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .client__link {
-  padding-left: 52px;
-  padding-right: 52px;
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;

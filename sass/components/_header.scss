@@ -34,10 +34,6 @@
 
 // Site-navigation
 .navigation {
-  // Mobile
-  @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
-  }
   // Tablet
   @media screen and (min-width: 768px) {
     display: flex;
@@ -105,9 +101,6 @@
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 64px;
-  }
-  // Tablet
-  @media screen and (min-width: 768px) {
   }
 
   // Desktop
@@ -192,7 +185,7 @@
 
 .social-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 
   // Tablet
   @media screen and (min-width: 768px) {
@@ -201,14 +194,17 @@
 }
 
 .social-list__item {
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+
   &:not(:last-child) {
+    padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
 
 .social-list__link {
-  padding-left: 10px;
-  padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22em;
