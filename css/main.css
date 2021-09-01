@@ -231,6 +231,12 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .navigation {
+    margin-bottom: 304px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     display: -webkit-box;
@@ -463,6 +469,31 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 69px;
+    padding-right: 69px;
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__address-box,
   .footer__social-box {
@@ -516,8 +547,13 @@ body {
 }
 
 .footer__social-box {
-  margin-top: 60px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__social-box {
+    margin-top: 60px;
+  }
 }
 
 .social-box__title {
@@ -526,9 +562,14 @@ body {
 }
 
 .footer-form {
-  margin-top: 60px;
   width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-form {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -632,7 +673,7 @@ body {
 
 .hero {
   height: 400px;
-  max-width: 480px;
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-right: auto;
@@ -655,7 +696,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-tablet-base.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet-base.jpg);
   }
@@ -671,7 +711,6 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-desktop-base.jpg);
@@ -1160,10 +1199,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .clients {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1172,31 +1218,32 @@ body {
         flex-wrap: nowrap;
     margin-right: auto;
     margin-left: auto;
-    margin-right: 0;
-    margin-bottom: 0;
   }
 }
 
-.clients__item {
-  -ms-flex-preferred-size: calc(100% / 2 - 30px);
-      flex-basis: calc(100% / 2 - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .clients__item {
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc((100% - (15px * 4)) / 2);
+        flex-basis: calc((100% - (15px * 4)) / 2);
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
-    -ms-flex-preferred-size: calc(100% / 3 - 30px);
-        flex-basis: calc(100% / 3 - 30px);
+    -ms-flex-preferred-size: calc((100% - (15px * 6)) / 3);
+        flex-basis: calc((100% - (15px * 6)) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .clients__item {
-    margin-bottom: 0;
-  }
-  .clients__item:last-child {
-    margin-right: 0;
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -1392,7 +1439,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 796px;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

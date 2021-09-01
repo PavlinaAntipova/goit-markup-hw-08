@@ -34,6 +34,11 @@
 
 // Site-navigation
 .navigation {
+  // Mobile
+  @media screen and (max-width: 767px) {
+    margin-bottom: 304px;
+  }
+
   // Tablet
   @media screen and (min-width: 768px) {
     display: flex;

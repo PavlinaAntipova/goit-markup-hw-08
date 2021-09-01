@@ -212,7 +212,7 @@
             <li class="works__item">
               <div class="works__thumb">
                 <img 
-                  src="./images/feature1.jpg"
+                  src="./images/work/work-1.jpg"
                   alt="Мужчина работает над кодом за компьютером"
                   width="370"
                   height="294"
@@ -225,7 +225,7 @@
             <li class="works__item">
               <div class="works__thumb">
                 <img
-                  src="./images/feature2.jpg"
+                  src="./images/work/work-2.jpg"
                   alt="Девушка держит в руке телефон и работает за ноутбуком"
                   width="370"
                   height="294"
@@ -238,7 +238,7 @@
             <li class="works__item">
               <div class="works__thumb">
                 <img
-                  src="./images/feature3.jpg"
+                  src="./images/work/work-3.jpg"
                   alt="Рука держит планшет с изображенной на нем цветовой схемой"
                   width="370"
                   height="294"
@@ -481,49 +481,51 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__address-box">
-          <a class="logo logo--lighten" href="./index.html"
-            ><span class="logo__text">Web</span>Studio</a
-          >
-          <address class="address">
-            <ul>
-              <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
-              <li class="address__item">
-                <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <div class="footer__wraper">
+          <div class="footer__address-box">
+            <a class="logo logo--lighten" href="./index.html"
+              ><span class="logo__text">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul>
+                <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="address__item">
+                  <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__social-box">
+            <p class="social-box__title">присоединяйтесь</p>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link social__link--darken" href=""
+                  ><svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-              <li class="address__item">
-                <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="social__item">
+                <a class="social__link social__link--darken" href=""
+                  ><svg width="20" height="20"><use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--darken" href=""
+                  ><svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--darken" href=""
+                  ><svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__social-box">
-          <p class="social-box__title">присоединяйтесь</p>
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__link social__link--darken" href=""
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--darken" href=""
-                ><svg width="20" height="20"><use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--darken" href=""
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--darken" href=""
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form class="footer-form" name="mailing">
@@ -544,8 +546,10 @@
         </form>
       </div>
     </footer>
-  
-    <script src="./js/mobile-menu.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
